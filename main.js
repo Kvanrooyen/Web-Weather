@@ -1,5 +1,5 @@
 function weatherBalloon(cityID) {
-  var key = 'Your appID';
+  var key = 'Your API Key';
   fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID + '&appid=' + key)
     .then(function(resp) {
       return resp.json()
